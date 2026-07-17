@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ayaka Okamoto's Portfolio Website</title>
+    <meta name="description"
+        content="Ayaka Okamotoのポートフォリオサイトです。お客様の想いを大切にし、ニーズに寄り添うWebデザインを提供します。心に響く体験を創造するWeb制作を目指しています。">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico.png">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Caveat:wght@400..700&family=Sawarabi+Mincho&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- ========================
+        header
+    ======================== -->
+    <header class="header">
+        <div class="header__inner container">
+            <nav class="gnav">
+                <ul class="gnav__list">
+                    <li class="gnav__item">
+                        <a href="./index.html" class="gnav__link">Home</a>
+                    </li>
+                    <li class="gnav__item">
+                        <a href="./about.html" class="gnav__link gnav__link--active">About</a>
+                    </li>
+                    <li class="gnav__item">
+                        <a href="./works.html" class="gnav__link">Works</a>
+                    </li>
+                    <li class="gnav__item">
+                        <a href="#contact" class="gnav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="toggle-btn">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="mask"></div>
+        </div>
+    </header>
+    <main class="main">
+
+        <!-- ========================
+            mv
+        ======================== -->
+        <div class="k-mv">
+            <div class="k-mv__fixed">
+                <div class="k-mv__wrap container">
+                    <h1 class="about__title sec-title">About me <span class="sec-subtitle">わたしについて</span></h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================
+            profile
+        ======================== -->
+        <section class="profile">
+            <div class="profile__flex container">
+                <div class="profile__inner-img">
+                    <picture class="profile__img">
+                        <source srcset="img/about_sp.png" media="(max-width: 900px)" class="profile__img-tab" />
+                        <img src="img/about_pc.png" alt="" class="profile__img-pc">
+                    </picture>
+                </div>
+                <div class="profile__inner profile__inner-white">
+                    <p class="profile__name"><span class="profile__name-en">Ayaka Okamoto</span>おかもと あやか</p>
+                    <p class="profile__text">趣味はアニメや韓国ドラマを見ることです。
+                        お菓子、フルーツが好きです。犬を飼っています。<br>
+                        <br>
+                        どんなことにも細やかで丁寧な姿勢を大切にしています。一つ一つのデザインを細部までこだわることでユーザーの心を惹きつけるような作品を作り上げるデザイナーを目指しています。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================
+            skill
+        ======================== -->
+        <section class="skill">
+            <div class="skill__inner container">
+                <h2 class="skill__title sec-title k-sec-title">Skill <span
+                        class="sec-subtitle k-sec-subtitle">できること</span></h2>
+                <ul class="sk-list">
+                    <li class="sk-list__list-item">
+                        <div class="sk-item">
+                            <h3 class="sk-item__title s-item-title">Design</h3>
+                            <p class="sk-item__text">
+                                Webサイト、バナーの制作をすることができます。コンポーネントやプロトタイプ機能を使い、動きのあるWebサイトを事前に再現することができ、コーディング時のギャップを少なくします。
+                            </p>
+                            <div class="sk-item__icon">
+                                <img src="img/icon1.png" alt="Figma">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="sk-list__list-item">
+                        <div class="sk-item">
+                            <h3 class="sk-item__title s-item-title">Cording</h3>
+                            <p class="sk-item__text">
+                                HTML/CSS/jQuery/WordPressでページを作成することが可能です。複雑なコードを避け、見やすくメンテナンスしやすいコードを書くように心がけています。レスポンシブ対応も可能です。
+                            </p>
+                            <div class="sk-item__icon">
+                                <img src="img/icon2.png" alt="Figma">
+                                <img src="img/icon3.png" alt="Figma">
+                                <img src="img/icon4.png" alt="Figma">
+                                <img src="img/icon5.png" alt="Figma">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ========================
+            strengths
+        ======================== -->
+        <section class="strengths">
+            <div class="strengths__inner container">
+                <h2 class="strengths__title sec-title k-sec-title">Strengths <span
+                        class="sec-subtitle k-sec-subtitle">強み</span></h2>
+                <ul class="sl-list">
+                    <li class="sl-list__list-item">
+                        <div class="sl-item">
+                            <h3 class="sl-item__title s-item-title">努力家</h3>
+                            <p class="sl-item__text">私は目標に向かって粘り強く努力することを得意としています。一度決めたことは最後までやり遂げる姿勢を大切にし、課題や問題があっても諦めずに解決策を見つけるために全力を尽くします。</p>
+                        </div>
+                    </li>
+                    <li class="sl-list__list-item">
+                        <div class="sl-item">
+                            <h3 class="sl-item__title s-item-title">向上心</h3>
+                            <p class="sl-item__text">常に新しい知識やスキルを学び続ける姿勢を持っています。現状に満足することなく、最新のデザインや技術に触れながら、自分自身を成長させ続けることを大切にしています。</p>
+                        </div>
+                    </li>
+                    <li class="sl-list__list-item">
+                        <div class="sl-item">
+                            <h3 class="sl-item__title s-item-title">献身力</h3>
+                            <p class="sl-item__text">マネージャーを経験し、一人ひとりに合わせたサポートや細やかな配慮を心がけていたことで、全体を見渡しながら行動する力を身につけました。この経験を活かし、相手の立場に立って考え、期待以上の価値を提供できるよう努めます。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ========================
+            contact
+        ======================== -->
+        <section id="contact" class="contact">
+            <div class="contact__inner">
+                <div class="contact__flex container">
+                    <h2 class="contact__title sec-title">Contact<span class="sec-subtitle">お問い合わせ</span></h2>
+                    <div class="contact__content">
+                        <p class="contact__text">ご覧いただきありがとうございます<br>下記のメールアドレス,公式LINEにお気軽にご連絡ください</p>
+                        <div class="contact__link">
+                            <a href="sunu88work@gmail.com?subject=お問い合わせ"
+                                class="btn mail-btn contact__btn">sunu88work@gmail.com</a>
+                            <a href="https://lin.ee/3yzhfZG" class="line-btn"><img
+                                    src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========================
+        footer
+    ======================== -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="container">
+                <nav class="fnav">
+                    <ul class="fnav__list">
+                        <li class="fnav__item">
+                            <a href="#" class="fnav__link">Home</a>
+                        </li>
+                        <li class="fnav__item">
+                            <a href="./about.html" class="fnav__link gnav__link--active">About</a>
+                        </li>
+                        <li class="fnav__item">
+                            <a href="./works.html" class="fnav__link">Works</a>
+                        </li>
+                        <li class="fnav__item">
+                            <a href="#contact" class="fnav__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="footer__copyright">©2025 ayaka okamoto</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

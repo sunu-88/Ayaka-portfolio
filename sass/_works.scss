@@ -1,0 +1,15 @@
+@use "variable" as v;
+@use "mixin" as m;
+
+/*下層ページworks*/
+.k-works {
+    &__inner {
+        margin-top: 120px;
+    }
+
+    .w-list {
+        &__list-item:hover {
+            opacity: 0.5;
+        }
+    }
+}

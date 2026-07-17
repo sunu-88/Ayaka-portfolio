@@ -1,0 +1,171 @@
+@use "variable" as v;
+@use "mixin" as m;
+
+/*--header--*/
+.header {
+    background-color: #fafafa;
+    border-radius: 0 0 16px 16px;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    &__inner {
+        height: 80px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-family: "Caveat", cursive;
+
+        @include m.tab {
+            height: 60px;
+            padding-left: 20px;
+            padding-right: 0;
+        }
+    }
+}
+
+
+.gnav {
+    @include m.tab {
+        position: fixed;
+        right: -100%;
+        opacity: 0;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        transition: all 0.5s;
+
+        @include m.tab {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+    }
+
+    &__item {
+        @include m.tab {
+            margin-top: 32px;
+        }
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 32px;
+
+        @include m.tab {
+            margin-right: 0;
+        }
+    }
+
+    &__link--active {
+        color: v.$color-main;
+
+        @include m.tab {
+            opacity: 0.6;
+        }
+    }
+
+    &__link {
+        transition: all 0.5s;
+        font-size: 18px;
+
+        @include m.tab {
+            color: #f1f1f1;
+            position: relative;
+            z-index: 10;
+            font-size: 20px;
+        }
+    }
+
+    &__link:hover {
+        color: v.$color-main ;
+    }
+}
+
+
+.open .gnav {
+    @include m.tab {
+        opacity: 1;
+        right: 0;
+        z-index: 10;
+    }
+}
+.open .gnav__list{
+    display: block;
+}
+
+.toggle-btn {
+    display: none;
+
+    @include m.tab {
+        display: block;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        position: fixed;
+        right: 32px;
+        z-index: 10;
+    }
+
+    span {
+        @include m.tab {
+            position: absolute;
+            width: 60%;
+            height: 2px;
+            background-color: #333;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all 0.4s;
+
+            &:nth-child(1) {
+                top: 40%;
+            }
+
+            &:nth-child(2) {
+                top: 60%;
+            }
+        }
+    }
+}
+
+.open .toggle-btn {
+    right: 32px;
+
+    span {
+        background-color: #f1f1f1;
+
+        &:nth-child(1) {
+            top: 50%;
+            transform: translateX(-50%) rotate(-315deg);
+        }
+
+        &:nth-child(2) {
+            top: 50%;
+            transform: translateX(-50%) rotate(315deg);
+        }
+    }
+}
+
+.open .mask {
+    display: block;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+.mask {
+    opacity: 0;
+    position: fixed;
+    right: -100%;
+    transition: all 0.5s;
+}

@@ -1,0 +1,211 @@
+@use "variable" as v;
+@use "mixin" as m;
+
+
+body {
+    font-family: "Sawarabi Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #F0ECE8;
+    letter-spacing: 0.07em;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #151515;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    @include m.tab {
+        padding: 0 20px;
+    }
+}
+.wrapper{
+    max-width: 928px;
+    margin: 0 auto;
+}
+
+
+//セクションタイトル
+.sec-title {
+    font-size: 56px;
+    font-family: "Caveat", cursive;
+    font-weight: 400;
+    color: v.$color-main;
+
+    @include m.tab {
+        font-size: 48px;
+    }
+}
+
+.sec-subtitle {
+    font-size: 20px;
+    font-family: "Sawarabi Mincho", serif;
+    display: block;
+    color: #333;
+
+    @include m.tab {
+        font-size: 18px;
+    }
+}
+
+//下層ページアイテムタイトル
+.k-sec-title {
+    font-size: 48px;
+}
+
+.k-sec-subtitle {
+    font-size: 18px;
+}
+
+.s-item-title{
+    font-size: 28px;
+    color: v.$color-main;
+}
+
+
+//ボタン
+.btn {
+    border: 2px solid v.$color-main;
+    color: v.$color-main;
+    background-color: #fafafa;
+    font-size: 24px;
+    font-family: "Caveat", cursive;
+    font-weight: 400;
+    border-radius: 16px;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: v.$color-main;
+        color: #fafafa;
+    }
+
+    @include m.tab {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.more-btn {
+    padding: 15px 50px;
+}
+
+.mail-btn {
+    padding: 20px 40px;
+}
+
+.list-btn{
+    font-family: "Sawarabi Mincho", serif;
+    padding: 8px 40px;
+    font-size: 18px;
+    text-align: center;
+    @include m.tab{
+        font-size: 16px;
+    }
+}
+
+
+//デザインリスト
+.w-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 40px;
+    gap: 32px;
+
+    &__list-item {
+        background-color: v.$color-bg;
+        border-radius: 16px;
+        // padding: 40px 16px 16px 16px;
+        @include m.tab{
+            width: 100%;
+        }
+    }
+
+    .w-item {
+        &__img {
+            padding: 40px 16px 16px 16px;
+        }
+
+        &__content {
+            background-color: #fafafa;
+            border-radius: 0 0 16px 16px;
+            padding: 16px;
+            text-align: left;
+        }
+
+        &__content-label {
+            display: inline-block;
+            color: v.$color-main;
+            border: 1px solid v.$color-main;
+            border-radius: 24px;
+            padding: 4px 16px;
+        }
+
+        &__content-title {
+            margin-top: 8px;
+        }
+
+        &__content-tag {
+            font-family: "Caveat", cursive;
+            margin-top: 8px;
+        }
+    }
+}
+
+//下層ページmv
+.k-mv {
+    background: linear-gradient(to top, rgba(254, 224, 187, 0.4), rgba(244, 222, 169, 0.4), rgba(251, 245, 207, 0.4));
+    height: 280px;
+    @include m.tab{
+        height: 200px;
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 280px;
+        position: absolute;
+        z-index: -1;
+        top: 280px;
+        background-image: url('../img/k-mv-wave.svg');
+        background-position: top;
+        background-repeat: repeat-x;
+        @include m.tab{
+            height: 200px;
+            top: 200px;
+        }
+    }
+
+    &__fixed {
+        position: relative;
+        top: 160px;
+        width: 100%;
+
+        @include m.tab {
+            top: 100px;
+        }
+    }
+
+    &__wrap {
+        text-align: center;
+    }
+
+}

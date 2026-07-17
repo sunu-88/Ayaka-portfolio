@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ayaka Okamoto's Portfolio Website</title>
+    <meta name="description"
+        content="Ayaka Okamotoのポートフォリオサイトです。お客様の想いを大切にし、ニーズに寄り添うWebデザインを提供します。心に響く体験を創造するWeb制作を目指しています。">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico.png">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Caveat:wght@400..700&family=Sawarabi+Mincho&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- ========================
+        header
+    ======================== -->
+    <header class="header">
+        <div class="header__inner container">
+            <nav class="gnav">
+                <ul class="gnav__list">
+                    <li class="gnav__item">
+                        <a href="#" class="gnav__link gnav__link--active">Home</a>
+                    </li>
+                    <li class="gnav__item">
+                        <a href="#about" class="gnav__link">About</a>
+                    </li>
+                    <li class="gnav__item">
+                        <a href="#works" class="gnav__link">Works</a>
+                    </li>
+                    <li class="gnav__item">
+                        <a href="#contact" class="gnav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="toggle-btn">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="mask"></div>
+        </div>
+    </header>
+    <main class="main">
+
+        <!-- ========================
+            mv
+        ======================== -->
+        <div class="mv">
+            <div class="mv__fixed">
+                <div class="mv__wrap container">
+                    <h1 class="mv__title">This is Ayaka Okamoto's <br>Portfolio Website.</h1>
+                    <picture class="mv__bg">
+                        <source srcset="/img/mainvisual_sp.png" media="(max-width: 900px)" class="mv__bg-tab" />
+                        <img src="/img/mainvisual_pc.png" alt="" class="mv__bg-img">
+                    </picture>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================
+            message
+        ======================== -->
+        <section class="message">
+            <div class="message__inner container">
+                <p class="message__text-top">ご覧いただきありがとうございます</p>
+                <p class="message__text">私はwebデザインを通じて、お客様の想いを大切にし、そのニーズにしっかりと寄り添うことを重視しています。<br>
+                    <br>
+                    どんなに小さなご要望でも、真摯に向き合い、迅速なレスポンスを心掛けることで、お客様が安心してプロジェクトを進められるようサポートしています。<br>
+                    <br>
+                    ただのビジュアルだけでなく、お客様とそのユーザーの心に響く体験を創造するようなweb制作をしたいと考えております。
+                </p>
+            </div>
+        </section>
+
+        <!-- ========================
+            about
+        ======================== -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about__flex">
+                    <div class="about__inner">
+                        <h2 class="about__title sec-title">About me <span class="sec-subtitle">わたしについて</span></h2>
+                        <p class="about__name">おかもと あやか</p>
+                        <p class="about__text">
+                            1998年生まれ、静岡県出身。大学を卒業後、約３年半事務として従事してきました。自分のライフスタイルに合わせた働き方をするために、2023年11月、スクールに入り、Webデザインやコーディングについて学びました。
+                        </p>
+                        <a href="./about.html" class="btn more-btn about__btn">View more</a>
+                    </div>
+                    <div class="about__inner">
+                        <picture class="about__img">
+                            <source srcset="img/profile_sp.png" media="(max-width: 900px)" class="about__img-tab" />
+                            <img src="img/profile_pc.png" alt="" class="about__img-pc">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================
+            works
+        ======================== -->
+        <section id="works" class="works">
+            <div class="works__inner container">
+                <h2 class="works__title sec-title">Works<span class="sec-subtitle">デザインしたもの</span></h2>
+                <ul class="w-list">
+                    <li class="w-list__list-item">
+                        <div class="w-item">
+                            <img src="img/works5.png" class="w-item__img">
+                            <div class="w-item__content">
+                                <p class="w-item__content-label">架空</p>
+                                <p class="w-item__content-title">さとう農園</p>
+                                <p class="w-item__content-tag">design/coding</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="w-list__list-item">
+                        <div class="w-item">
+                            <img src="img/works4.png" class="w-item__img">
+                            <div class="w-item__content">
+                                <p class="w-item__content-label">クライアントワーク</p>
+                                <p class="w-item__content-title">AC-Rabbit</p>
+                                <p class="w-item__content-tag">design/coding</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="w-list__list-item">
+                        <div class="w-item">
+                            <img src="img/works3.png" class="w-item__img">
+                            <div class="w-item__content">
+                                <p class="w-item__content-label">クライアントワーク</p>
+                                <p class="w-item__content-title">Smart Scale Ruler</p>
+                                <p class="w-item__content-tag">design/coding</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <a href="./works.html" class="btn more-btn works__btn">View more</a>
+            </div>
+        </section>
+
+        <!-- ========================
+            contact
+        ======================== -->
+        <section id="contact" class="contact">
+            <div class="contact__inner">
+                <div class="contact__flex container">
+                    <h2 class="contact__title sec-title">Contact<span class="sec-subtitle">お問い合わせ</span></h2>
+                    <div class="contact__content">
+                        <p class="contact__text">ご覧いただきありがとうございます<br>下記のメールアドレス,公式LINEにお気軽にご連絡ください</p>
+                        <div class="contact__link">
+                            <a href="sunu88work@gmail.com?subject=お問い合わせ"
+                                class="btn mail-btn contact__btn">sunu88work@gmail.com</a>
+                            <a href="https://lin.ee/3yzhfZG" class="line-btn"><img
+                                    src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========================
+        footer
+    ======================== -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="container">
+                <nav class="fnav">
+                    <ul class="fnav__list">
+                        <li class="fnav__item">
+                            <a href="#" class="fnav__link gnav__link--active">Home</a>
+                        </li>
+                        <li class="fnav__item">
+                            <a href="./about.html" class="fnav__link">About</a>
+                        </li>
+                        <li class="fnav__item">
+                            <a href="./works.html" class="fnav__link">Works</a>
+                        </li>
+                        <li class="fnav__item">
+                            <a href="#contact" class="fnav__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="footer__copyright">©2025 ayaka okamoto</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

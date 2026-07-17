@@ -1,0 +1,231 @@
+@use "variable" as v;
+@use "mixin" as m;
+
+/*--mv--*/
+.mv {
+    // height: calc(100vh - 80px);
+    // @include m.tab{
+    //     height:calc(65vh + 80px);
+    // }
+
+    &__fixed {
+        position: relative;
+        top: 160px;
+        width: 100%;
+
+        @include m.tab {
+            top: 80px;
+        }
+    }
+
+    &__wrap {
+        margin-left: auto;
+        margin-right: auto;
+
+        @include m.tab {
+            padding-inline: 0;
+        }
+
+        &::after {
+            content: "AYAKA OKAMOTO";
+            position: absolute;
+            bottom: 90px;
+            font-family: "Allura", cursive;
+            font-weight: 400;
+            font-size: min(9.7vw, 120px);
+            opacity: 0.1;
+
+            @include m.tab {
+                display: none;
+            }
+        }
+    }
+
+    &__title {
+        font-family: "Caveat", cursive;
+        color: #333;
+        position: absolute;
+        z-index: 1;
+        top: 50px;
+        font-size: clamp(32px, 5vw, 56px);
+        line-height: 1.5;
+        font-weight: 400;
+
+        @include m.tab {
+            left: 20px;
+            top: 30px;
+        }
+    }
+
+
+    &__bg-img {
+        // height: calc(100vh - 160px);
+        display: block;
+        margin-left: auto;
+        width: 50%;
+
+        @include m.tab {
+            // height: 65vh;
+            position: relative;
+            top: 130px;
+            width: 70%;
+        }
+    }
+}
+
+/*--message--*/
+.message {
+    &__inner {
+        margin-top: 240px;
+        text-align: center;
+        max-width: 562px;
+    }
+
+    &__text-top {
+        font-size: 24px;
+    }
+
+    &__text {
+        margin-top: 32px;
+        line-height: 1.5;
+    }
+}
+
+
+
+/*--about--*/
+.about {
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+        margin-top: 80px;
+        background-color: #fafafa;
+        border-radius: 16px;
+        padding: 40px 96px;
+
+        @include m.tab {
+            flex-direction: column;
+            padding: 40px 16px;
+            gap: 24px;
+        }
+    }
+
+    &__inner {
+        width: 50%;
+
+        @include m.tab {
+            width: 100%;
+        }
+    }
+
+    &__name {
+        font-size: 32px;
+        margin-top: 20px;
+
+        @include m.tab {
+            font-size: 24px;
+        }
+    }
+
+    &__text {
+        margin-top: 20px;
+        line-height: 1.5;
+
+        @include m.tab {
+            font-size: 14px;
+        }
+    }
+
+    &__btn {
+        margin-top: 20px;
+    }
+
+    &__img-pc {
+        width: 100%;
+    }
+
+}
+
+/*--works--*/
+.works {
+    &__inner {
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    &__btn {
+        margin-top: 42px;
+    }
+}
+
+/*--contact--*/
+.contact {
+    &__inner {
+        margin-top: 120px;
+        background: linear-gradient(to bottom, rgba(254, 224, 187, 0.4), rgba(244, 222, 169, 0.4), rgba(251, 245, 207, 0.4));
+        padding-bottom: 130px;
+        position: relative;
+        @include m.tab{
+            padding-bottom: 100px;
+        }
+
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            top: -100%;
+            background-image: url('../img/contact-wave.svg');
+            background-position: bottom;
+            background-repeat: repeat-x;
+        }
+    }
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        @include m.tab{
+            flex-direction: column;
+        }
+    }
+    &__content{
+        @include m.tab{
+            margin-top: 20px;
+        }
+    }
+
+    &__text {
+        line-height: 1.5;
+        @include m.tab{
+            font-size: 14px;
+        }
+    }
+
+    &__link {
+        margin-top: 20px;
+        display: flex;
+        gap: 40px;
+        @include m.tab{
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    .line-btn{
+        @include m.tab{
+            width: 100%;
+            transition: all 0.3s;
+        }
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+
+    .line-btn img {
+        border-radius: 16px;
+    }
+}
