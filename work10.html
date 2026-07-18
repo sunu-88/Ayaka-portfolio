@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ayaka Okamoto's Portfolio Website</title>
+    <meta name="description"
+        content="Ayaka Okamotoのポートフォリオサイトです。お客様の想いを大切にし、ニーズに寄り添うWebデザインを提供します。心に響く体験を創造するWeb制作を目指しています。">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico.png">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Caveat:wght@400..700&family=Sawarabi+Mincho&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- ========================
+        header
+    ======================== -->
+    <header class="header">
+        <div class="header__inner container">
+            <nav class="gnav">
+                <ul class="gnav__list">
+                    <li class="gnav__item">
+                        <a href="./index.html" class="gnav__link">Home</a>
+                    </li>
+                    <li class="gnav__item">
+                        <a href="./about.html" class="gnav__link">About</a>
+                    </li>
+                    <li class="gnav__item">
+                        <a href="./works.html" class="gnav__link gnav__link--active">Works</a>
+                    </li>
+                    <li class="gnav__item">
+                        <a href="#contact" class="gnav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="toggle-btn">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="mask"></div>
+        </div>
+    </header>
+    <main class="main">
+
+        <!-- ========================
+            詳細のmv
+        ======================== -->
+        <div class="d-mv">
+            <div class="d-mv__fixed">
+                <div class="d-mv__wrap container">
+                    <div class="d-mv__content">
+                        <p class="d-mv__content-label">架空</p>
+                        <p class="d-mv__content-title">Ramen Memory</p>
+                        <p class="d-mv__content-tag">design/coding</p>
+                    </div>
+                    <img src="img/works10-top.png" alt="" class="d-mv__img">
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================
+            スクロール
+        ======================== -->
+        <section class="d-scroll">
+            <div class="d-scroll__outer container">
+                <div class="d-scroll__inner wrapper">
+                    <p class="d-scroll__text">ラーメン好きが訪れた店舗や食べた一杯を記録・共有できるWebアプリ「Ramen Memory」を企画・デザイン・開発しました。自分専用のラーメン記録として利用できるだけでなく、他ユーザーの投稿を閲覧して新しい店舗を見つけられるコミュニティ機能も備えています。ダッシュボードを中心に、投稿管理やランキング、閲覧履歴、カレンダー、マップなど、ラーメン巡りをより楽しめる機能を搭載しました。</p>
+                    <div class="scroll_down" id="type01">
+                        <p>Scroll</p>
+                    </div>
+                    <div class="d-scroll__content">
+                        <img src="img/work10_scroll.png" alt="" class="d-scroll__img">
+                    </div>
+                    <a href="https://www.figma.com/design/LGyquLbeIYIFXdRkxnDLtw/%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%83%A1%E3%83%A2%E3%83%AA%E3%83%BC_%E3%83%9B%E3%82%9A%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA%E7%94%A8?node-id=39-1158&t=sKL6NvBV4s3Spijt-1" target="_blank" class="btn list-btn d-scroll__btn">デザインを見る</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ========================
+            info
+        ======================== -->
+        <section class="d-info">
+            <div class="wrapper">
+                <dl class="d-info__inner">
+                    <dt class="d-info__head">ターゲット</dt>
+                    <dt class="d-info__body">ラーメン店巡りが趣味の20〜40代の男女。食べたラーメンを写真とともに記録したい方や、おすすめのお店を探したい方、全国のラーメン好きと情報を共有したい方。</dt>
+                    <dt class="d-info__head">目的</dt>
+                    <dt class="d-info__body">訪問履歴や評価を一元管理できる環境を提供し、自分だけのラーメンデータベースとして活用できることを目的とした。また、他ユーザーの投稿やランキング機能を通じて新しい店舗との出会いを生み出し、ラーメン好き同士が情報交換できるサービスを目指している。
+                    </dt>
+                    <dt class="d-info__head">情報設計</dt>
+                    <dt class="d-info__body">ログイン後はダッシュボードを起点とし、訪問店舗数や総投稿数などの利用状況を一目で確認できる構成にした。その下には自分の投稿と他ユーザーの投稿を配置し、日々の記録と情報収集を同じ画面で行えるよう設計している。各機能はサイドバーからアクセスでき、「投稿一覧」「人気ランキング」「新着投稿」「閲覧履歴」「いいねした投稿」「カレンダー」「行ったお店マップ」など、目的ごとに迷わず移動できる導線を意識した。また、投稿作成や各投稿の詳細ページでは写真・評価・タグ・店舗情報を整理して表示し、情報量が多くても見やすい画面構成としている。
+                    </dt>
+                    <dt class="d-info__head">デザインプロセス</dt>
+                    <dt class="d-info__body">ラーメンを連想させる温かみのあるブラウンとオレンジをメインカラーに採用し、飲食サービスらしい親しみやすさと食欲を感じられるデザインに仕上げた。カード型レイアウトを採用することで、多くの投稿を一覧表示しても視認性を保ち、店舗情報や評価を比較しやすくしている。評価は星アイコン、ジャンルはタグで視覚的に整理し、一目で特徴が伝わるよう工夫した。また、統計情報やナビゲーションはシンプルなデザインにまとめ、日常的に利用してもストレスなく操作できるUIを意識している。PCでの利用を前提としながらも、レスポンシブ対応によりタブレットやスマートフォンでも快適に閲覧・操作できる設計とした。</dt>
+                    <dt class="d-info__head">制作期間</dt>
+                    <dt class="d-info__body">企画 / 情報設計　1週間<br>
+                        デザイン　 2週間<br>
+                        コーディング　 4ヶ月</dt>
+                    <dt class="d-info__head">使用ツール</dt>
+                    <dt class="d-info__body">figma/ VScode</dt>
+                </dl>
+                <a href="./works.html" class="btn list-btn d-info__btn">一覧へもどる</a>
+            </div>
+        </section>
+
+
+
+        <!-- ========================
+            contact
+        ======================== -->
+        <section id="contact" class="contact">
+            <div class="contact__inner">
+                <div class="contact__flex container">
+                    <h2 class="contact__title sec-title">Contact<span class="sec-subtitle">お問い合わせ</span></h2>
+                    <div class="contact__content">
+                        <p class="contact__text">ご覧いただきありがとうございます<br>下記のメールアドレス,公式LINEにお気軽にご連絡ください</p>
+                        <div class="contact__link">
+                            <a href="sunu88work@gmail.com?subject=お問い合わせ"
+                                class="btn mail-btn contact__btn">sunu88work@gmail.com</a>
+                            <a href="https://lin.ee/3yzhfZG" class="line-btn"><img
+                                    src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========================
+        footer
+    ======================== -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="container">
+                <nav class="fnav">
+                    <ul class="fnav__list">
+                        <li class="fnav__item">
+                            <a href="#" class="fnav__link">Home</a>
+                        </li>
+                        <li class="fnav__item">
+                            <a href="./about.html" class="fnav__link">About</a>
+                        </li>
+                        <li class="fnav__item">
+                            <a href="./works.html" class="fnav__link gnav__link--active">Works</a>
+                        </li>
+                        <li class="fnav__item">
+                            <a href="#contact" class="fnav__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="footer__copyright">©2025 ayaka okamoto</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

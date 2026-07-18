@@ -95,6 +95,14 @@
 
 /*--about--*/
 .about {
+    margin-top: -80px;
+    padding-top: 80px;
+
+    @include m.tab {
+        margin-top: -20px;
+        padding-top: 20px;
+    }
+
     &__flex {
         display: flex;
         justify-content: space-between;
@@ -150,6 +158,14 @@
 
 /*--works--*/
 .works {
+    margin-top: -80px;
+    padding-top: 80px;
+
+    @include m.tab {
+        margin-top: -20px;
+        padding-top: 20px;
+    }
+
     &__inner {
         margin-top: 80px;
         text-align: center;
@@ -167,7 +183,8 @@
         background: linear-gradient(to bottom, rgba(254, 224, 187, 0.4), rgba(244, 222, 169, 0.4), rgba(251, 245, 207, 0.4));
         padding-bottom: 130px;
         position: relative;
-        @include m.tab{
+
+        @include m.tab {
             padding-bottom: 100px;
         }
 
@@ -188,19 +205,22 @@
     &__flex {
         display: flex;
         justify-content: space-between;
-        @include m.tab{
+
+        @include m.tab {
             flex-direction: column;
         }
     }
-    &__content{
-        @include m.tab{
+
+    &__content {
+        @include m.tab {
             margin-top: 20px;
         }
     }
 
     &__text {
         line-height: 1.5;
-        @include m.tab{
+
+        @include m.tab {
             font-size: 14px;
         }
     }
@@ -209,18 +229,20 @@
         margin-top: 20px;
         display: flex;
         gap: 40px;
-        @include m.tab{
+
+        @include m.tab {
             flex-direction: column;
             gap: 20px;
         }
     }
 
-    .line-btn{
-        @include m.tab{
+    .line-btn {
+        @include m.tab {
             width: 100%;
             transition: all 0.3s;
         }
-        &:hover{
+
+        &:hover {
             opacity: 0.7;
         }
     }

@@ -439,6 +439,16 @@ a {
 }
 
 /*--about--*/
+.about {
+  margin-top: -80px;
+  padding-top: 80px;
+}
+@media (max-width: 900px) {
+  .about {
+    margin-top: -20px;
+    padding-top: 20px;
+  }
+}
 .about__flex {
   display: flex;
   justify-content: space-between;
@@ -490,6 +500,16 @@ a {
 }
 
 /*--works--*/
+.works {
+  margin-top: -80px;
+  padding-top: 80px;
+}
+@media (max-width: 900px) {
+  .works {
+    margin-top: -20px;
+    padding-top: 20px;
+  }
+}
 .works__inner {
   margin-top: 80px;
   text-align: center;
